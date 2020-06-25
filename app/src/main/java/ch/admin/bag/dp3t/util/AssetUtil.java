@@ -15,7 +15,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.TimeZone;
 
 import ch.admin.bag.dp3t.BuildConfig;
 import ch.admin.bag.dp3t.R;
@@ -27,6 +27,8 @@ public class AssetUtil {
 	private static final String FILE_NAME_IMPRESSUM = "impressum.html";
 
 	private static final String REPLACE_STRING_VERSION = "{VERSION}";
+	private static final String REPLACE_STRING_APPVERSION = "{APPVERSION}";
+	private static final String REPLACE_STRING_RELEASEDATE = "{RELEASEDATE}";
 	private static final String REPLACE_STRING_BUILDNR = "{BUILD}";
 
 	public static String getImpressumBaseUrl(Context context) {
@@ -55,10 +57,14 @@ public class AssetUtil {
 					.append(", ")
 					.append(org.dpppt.android.sdk.BuildConfig.VERSION_NAME);
 			StringBuilder buildString =
-					new StringBuilder(SimpleDateFormat.getDateTimeInstance().format(new Date(BuildConfig.BUILD_TIME)))
+					new StringBuilder(String.valueOf(BuildConfig.BUILD_TIME))
 							.append(" / ")
 							.append(BuildConfig.FLAVOR);
 			impressum = impressum.replace(REPLACE_STRING_VERSION, versionString);
+			impressum = impressum.replace(REPLACE_STRING_APPVERSION, BuildConfig.VERSION_NAME);
+			SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+			sdf.setTimeZone(TimeZone.getTimeZone("Europe/Zurich"));
+			impressum = impressum.replace(REPLACE_STRING_RELEASEDATE, sdf.format(BuildConfig.BUILD_TIME));
 			impressum = impressum.replace(REPLACE_STRING_BUILDNR, buildString);
 			return impressum;
 		} catch (IOException e) {

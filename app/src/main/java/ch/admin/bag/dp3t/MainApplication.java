@@ -27,13 +27,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.InfectionStatus;
 import org.dpppt.android.sdk.TracingStatus;
-import org.dpppt.android.sdk.internal.backend.BackendBucketRepository;
 import org.dpppt.android.sdk.internal.logger.LogLevel;
 import org.dpppt.android.sdk.internal.logger.Logger;
 import org.dpppt.android.sdk.models.ApplicationInfo;
 import org.dpppt.android.sdk.models.ExposureDay;
 import org.dpppt.android.sdk.util.SignatureUtil;
 
+import ch.admin.bag.dp3t.debug.DebugFragment;
 import ch.admin.bag.dp3t.networking.CertificatePinning;
 import ch.admin.bag.dp3t.networking.FakeWorker;
 import ch.admin.bag.dp3t.storage.SecureStorage;
@@ -48,11 +48,9 @@ public class MainApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 
-		if (BuildConfig.IS_FLAVOR_DEV) {
-			BackendBucketRepository.BATCH_LENGTH = 5 * 60 * 1000L;
+		if (DebugFragment.EXISTS) {
 			Logger.init(getApplicationContext(), LogLevel.DEBUG);
-		} else {
-			Logger.init(getApplicationContext(), LogLevel.DEBUG);
+			CertificatePinning.initDebug(this);
 		}
 
 		registerReceiver(contactUpdateReceiver, DP3T.getUpdateIntentFilter());
@@ -79,6 +77,7 @@ public class MainApplication extends Application {
 						mainActivityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 						startActivity(mainActivityIntent);
 					}
+					DP3T.addClientOpenedToHistory(MainApplication.this);
 				}
 			}
 
@@ -96,7 +95,8 @@ public class MainApplication extends Application {
 
 	public static void initDP3T(Context context) {
 		PublicKey signaturePublicKey = SignatureUtil.getPublicKeyFromBase64OrThrow(BuildConfig.BUCKET_PUBLIC_KEY);
-		DP3T.init(context, new ApplicationInfo("dp3t-app", BuildConfig.REPORT_URL, BuildConfig.BUCKET_URL), signaturePublicKey);
+		DP3T.init(context, new ApplicationInfo("dp3t-app", BuildConfig.REPORT_URL, BuildConfig.BUCKET_URL), signaturePublicKey,
+				BuildConfig.DEV_HISTORY);
 
 		DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
 		DP3T.setUserAgent(context.getPackageName() + ";" + BuildConfig.VERSION_NAME + ";" + BuildConfig.BUILD_TIME + ";Android;" +

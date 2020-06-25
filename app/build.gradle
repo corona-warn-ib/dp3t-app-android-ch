@@ -15,7 +15,8 @@ plugins {
 
 apply from: 'backend_certs.gradle'
 
-ext.readProperty = { paramName ->
+ext.readProperty = { paramName -> readPropertyWithDefault(paramName, null) }
+ext.readPropertyWithDefault = { paramName, defaultValue ->
 	if (project.hasProperty(paramName)) {
 		return project.getProperties().get(paramName)
 	} else {
@@ -23,7 +24,11 @@ ext.readProperty = { paramName ->
 		if (project.rootProject.file('local.properties').exists()) {
 			properties.load(project.rootProject.file('local.properties').newDataInputStream())
 		}
-		return properties.getProperty(paramName)
+		if (properties.getProperty(paramName) != null) {
+			return properties.getProperty(paramName)
+		} else {
+			return defaultValue
+		}
 	}
 }
 
@@ -35,11 +40,14 @@ android {
 		applicationId "ch.admin.bag.dp3t"
 		minSdkVersion 23
 		targetSdkVersion 29
-		versionCode 10020
-		versionName "1.0.2-pilot"
-		resConfigs "en", "fr", "de", "it", "pt", "es", "sq", "bs", "hr", "sr"
+		versionCode 10050
+		versionName "1.0.5"
+		resConfigs "en", "fr", "de", "it", "pt", "es", "sq", "bs", "hr", "sr", "rm"
 
-		buildConfigField "long", "BUILD_TIME", System.currentTimeMillis() + "L"
+		buildConfigField "long", "BUILD_TIME", readPropertyWithDefault('buildTimestamp', System.currentTimeMillis()) + 'L'
+
+		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+		testInstrumentationRunnerArguments clearPackageData: 'true'
 	}
 
 	flavorDimensions "version"
@@ -53,6 +61,7 @@ android {
 
 	productFlavors {
 		dev {
+			buildConfigField 'boolean', 'DEV_HISTORY', 'true'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-d.bfs.admin.ch/"'
@@ -61,6 +70,7 @@ android {
 			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', "\"${project.backend_certs.dev.BUCKET_PUBLIC_KEY}\""
 		}
 		tescht {
+			buildConfigField 'boolean', 'DEV_HISTORY', 'true'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-t.bag.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-t.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-t.bfs.admin.ch/"'
@@ -69,6 +79,7 @@ android {
 			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', "\"${project.backend_certs.test.BUCKET_PUBLIC_KEY}\""
 		}
 		abnahme {
+			buildConfigField 'boolean', 'DEV_HISTORY', 'true'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-a.bag.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-a.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-a.bfs.admin.ch/"'
@@ -77,6 +88,7 @@ android {
 			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', "\"${project.backend_certs.abnahme.BUCKET_PUBLIC_KEY}\""
 		}
 		prod {
+			buildConfigField 'boolean', 'DEV_HISTORY', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service.bag.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt.bfs.admin.ch/"'
@@ -88,7 +100,7 @@ android {
 
 	signingConfigs {
 		release {
-			storeFile file('testKeystore')
+			storeFile file(readPropertyWithDefault('keystoreFile', 'testKeystore'))
 			storePassword readProperty('keystorePassword')
 			keyAlias 'keyAlias'
 			keyPassword readProperty('keyAliasPassword')
@@ -123,7 +135,7 @@ sonarqube {
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
-	def dp3t_sdk_version = '0.5.2'
+	def dp3t_sdk_version = '1.0.0'
 	devImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version-calibration"
 	teschtImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
 	abnahmeImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
@@ -146,4 +158,10 @@ dependencies {
 
 	implementation 'com.squareup.retrofit2:retrofit:2.8.1'
 	implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+
+	androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+	androidTestImplementation 'androidx.test:runner:1.2.0'
+	androidTestImplementation 'androidx.test:core:1.2.0'
+	androidTestImplementation 'androidx.test:rules:1.2.0'
+	androidTestImplementation 'androidx.work:work-testing:2.3.4'
 }

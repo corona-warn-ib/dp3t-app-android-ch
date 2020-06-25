@@ -14,8 +14,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ScrollView;
 import android.widget.Switch;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -23,11 +25,15 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import org.dpppt.android.sdk.internal.history.HistoryEntry;
+import org.dpppt.android.sdk.internal.history.HistoryEntryType;
 import org.dpppt.android.sdk.internal.logger.Logger;
 
+import ch.admin.bag.dp3t.BuildConfig;
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.main.TracingBoxFragment;
 import ch.admin.bag.dp3t.main.views.HeaderView;
+import ch.admin.bag.dp3t.util.DateUtils;
 import ch.admin.bag.dp3t.util.ENExceptionHelper;
 import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
 
@@ -74,6 +80,7 @@ public class ContactsFragment extends Fragment {
 		});
 		setupScrollBehavior();
 		setupTracingView();
+		setupHistoryCard(view);
 
 		view.findViewById(R.id.contacts_faq_button).setOnClickListener(v -> {
 			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url)));
@@ -84,31 +91,73 @@ public class ContactsFragment extends Fragment {
 	private void setupTracingView() {
 		Activity activity = requireActivity();
 
-		tracingSwitch.setOnClickListener(v -> {
-			if (tracingSwitch.isChecked()) {
-				tracingViewModel.enableTracing(activity,
-						() -> {
-							// success, do nothing
-						},
-						(e) -> {
-							String message = ENExceptionHelper.getErrorMessage(e, activity);
-							Logger.e(TAG, message);
-							new AlertDialog.Builder(activity, R.style.NextStep_AlertDialogStyle)
-									.setTitle(R.string.android_en_start_failure)
-									.setMessage(message)
-									.setPositiveButton(R.string.android_button_ok, (dialog, which) -> {})
-									.show();
-							tracingSwitch.setChecked(false);
-						},
-						() -> tracingSwitch.setChecked(false));
-			} else {
-				tracingViewModel.disableTracing();
+		tracingSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				if (isChecked) {
+					tracingViewModel.enableTracing(activity,
+							() -> {
+								// success, do nothing
+							},
+							(e) -> {
+								String message = ENExceptionHelper.getErrorMessage(e, activity);
+								Logger.e(TAG, message);
+								new AlertDialog.Builder(activity, R.style.NextStep_AlertDialogStyle)
+										.setTitle(R.string.android_en_start_failure)
+										.setMessage(message)
+										.setPositiveButton(R.string.android_button_ok, (dialog, which) -> {})
+										.show();
+								tracingSwitch.setChecked(false);
+							},
+							() -> tracingSwitch.setChecked(false));
+				} else {
+					tracingViewModel.disableTracing();
+				}
 			}
 		});
 
 		tracingViewModel.getTracingStatusLiveData().observe(getViewLifecycleOwner(), status -> {
 			tracingSwitch.setChecked(status.isTracingEnabled());
 		});
+	}
+
+	private void setupHistoryCard(View view) {
+		View historyCard = view.findViewById(R.id.contacts_card_history);
+		if (BuildConfig.IS_FLAVOR_PROD || BuildConfig.IS_FLAVOR_ABNAHME) {
+			historyCard.setVisibility(View.GONE);
+			return;
+		}
+
+		historyCard.setOnClickListener(v -> {
+			getParentFragmentManager().beginTransaction()
+					.setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter, R.anim.slide_pop_exit)
+					.replace(R.id.main_fragment_container, HistoryFragment.newInstance())
+					.addToBackStack(HistoryFragment.class.getCanonicalName())
+					.commit();
+		});
+		View historyCardLoadingView = view.findViewById(R.id.card_history_loading_view);
+		historyCardLoadingView.setVisibility(View.VISIBLE);
+		TextView lastSyncDate = view.findViewById(R.id.card_history_last_synchronization_date);
+
+		tracingViewModel.getHistoryLiveDate().observe(getViewLifecycleOwner(), historyEntries -> {
+			if (historyEntries != null) {
+				Long timeSync = null;
+				for (HistoryEntry entry : historyEntries) {
+					if (entry.getType() == HistoryEntryType.SYNC && entry.isSuccessful()) {
+						timeSync = entry.getTime();
+						lastSyncDate.setText(DateUtils.getFormattedDateTime(timeSync));
+						break;
+					}
+				}
+				if (timeSync == null) lastSyncDate.setText("-");
+				historyCardLoadingView.animate()
+						.alpha(0f)
+						.setDuration(getResources().getInteger(android.R.integer.config_shortAnimTime))
+						.withEndAction(() -> historyCardLoadingView.setVisibility(View.GONE))
+						.start();
+			}
+		});
+		tracingViewModel.loadHistoryEntries();
 	}
 
 	@Override
