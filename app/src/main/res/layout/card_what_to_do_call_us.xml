@@ -34,7 +34,7 @@
 				android:paddingRight="@dimen/spacing_larger"
 				android:paddingBottom="@dimen/spacing_larger">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:id="@+id/card_encounters_subtitle"
 					style="@style/NextStep.Text.SubTitle"
 					android:layout_width="match_parent"
@@ -44,7 +44,7 @@
 					android:textColor="@color/blue_main"
 					app:layout_constraintTop_toTopOf="parent" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:id="@+id/card_encounters_title"
 					style="@style/NextStep.Text.Title"
 					android:layout_width="match_parent"
@@ -80,13 +80,13 @@
 					app:layout_constraintRight_toLeftOf="@id/card_encounters_image"
 					app:layout_constraintTop_toTopOf="@id/card_encounters_image">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/infoline_tel_number" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						android:id="@+id/card_encounters_text"
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
@@ -112,7 +112,7 @@
 					android:textAllCaps="true"
 					app:layout_constraintTop_toBottomOf="@id/card_encounters_barrier1" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:id="@+id/card_encounters_last_call"
 					style="@style/NextStep.Text"
 					android:layout_width="match_parent"
@@ -131,7 +131,7 @@
 					android:orientation="vertical"
 					app:layout_constraintTop_toBottomOf="@id/card_encounters_last_call">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
 
 						<include layout="@layout/view_text_bullet" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							style="@style/NextStep.Text"
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
 
 						<include layout="@layout/view_text_bullet" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							style="@style/NextStep.Text"
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
 
 						<include layout="@layout/view_text_bullet" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							style="@style/NextStep.Text"
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
@@ -195,7 +195,7 @@
 				android:layout_height="1dp"
 				android:background="@color/grey_light" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				android:id="@+id/delete_reports"
 				style="@style/NextStep.Button.Transparent"
 				android:layout_width="match_parent"
@@ -222,7 +222,7 @@
 		android:paddingTop="@dimen/spacing_very_large"
 		android:paddingBottom="@dimen/spacing_medium_large">
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Bold"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -241,7 +241,7 @@
 				android:src="@drawable/ic_call"
 				android:tint="@color/blue_main" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"

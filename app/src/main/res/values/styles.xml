@@ -14,7 +14,7 @@
 		<item name="colorPrimary">@color/colorPrimary</item>
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="colorAccent">@color/colorAccent</item>
-		<item name="fontFamily">@font/inter</item>
+		<item name="fontFamily">@font/bariol</item>
 		<item name="android:windowLightStatusBar">true</item>
 		<item name="android:statusBarColor">@color/white</item>
 		<item name="toolbarStyle">@style/NextStep.Toolbar</item>
@@ -31,7 +31,7 @@
 		<item name="android:textSize">@dimen/text_size_normal</item>
 		<item name="android:textColor">@color/dark_main</item>
 		<item name="android:lineSpacingMultiplier">1.1</item>
-		<item name="fontFamily">@font/inter</item>
+		<item name="fontFamily">@font/bariol</item>
 	</style>
 
 	<style name="NextStep.Text.Small">

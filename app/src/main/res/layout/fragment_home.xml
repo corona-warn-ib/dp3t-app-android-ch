@@ -26,9 +26,9 @@
 			android:layout_gravity="left"
 			android:adjustViewBounds="true"
 			android:scaleType="fitCenter"
-			android:src="@drawable/ic_schweiz_wappen" />
+			android:src="@drawable/ic_balears" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Bold"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
 						android:layout_weight="1"
 						android:orientation="vertical">
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							android:id="@+id/status_title"
 							style="@style/NextStep.Text.Status"
 							android:layout_width="match_parent"
@@ -130,7 +130,7 @@
 							android:text="@string/preview_warning_title"
 							android:textColor="@color/dark_main" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							android:id="@+id/status_text"
 							style="@style/NextStep.Text"
 							android:layout_width="match_parent"

@@ -41,7 +41,7 @@
 		app:layout_constraintTop_toTopOf="@id/status_title"
 		tools:src="@drawable/ic_check" />
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/status_title"
 		style="@style/NextStep.Text.Status"
 		android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
 		app:layout_constraintStart_toEndOf="@+id/status_icon"
 		tools:text="Status" />
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/status_text"
 		style="@style/NextStep.Text"
 		android:layout_width="0dp"
@@ -96,7 +96,7 @@
 			android:tint="@color/blue_main"
 			android:src="@drawable/ic_info" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Blue"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
 		app:layout_constraintStart_toEndOf="@id/status_triangle"
 		tools:visibility="visible">
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			android:id="@+id/status_additional_info_text"
 			style="@style/NextStep.Text"
 			android:layout_width="wrap_content"
@@ -136,7 +136,7 @@
 			android:gravity="start"
 			android:text="@string/exposed_info_contact_hotline" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			android:id="@+id/status_additional_info_tel"
 			style="@style/NextStep.Text.Bold"
 			android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
 			android:gravity="start"
 			android:text="@string/exposed_info_contact_hotline_name" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			android:id="@+id/status_additional_info_since"
 			style="@style/NextStep.Text.Blue"
 			android:layout_width="match_parent"

@@ -20,7 +20,7 @@
 	android:paddingEnd="@dimen/spacing_very_large"
 	android:paddingBottom="@dimen/spacing_tiny_small">
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/item_history_label"
 		style="@style/NextStep.Text"
 		android:layout_width="0dp"
@@ -28,7 +28,7 @@
 		android:layout_weight="1"
 		tools:text="@string/synchronizations_view_sync_via_background" />
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/item_history_date"
 		style="@style/NextStep.Text"
 		android:layout_width="wrap_content"

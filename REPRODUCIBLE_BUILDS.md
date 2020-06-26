@@ -7,9 +7,9 @@ Note: reproducible builds work starting version 1.0.3
 
 Download and install [Docker](https://www.docker.com/).
 
-## Check your SwissCovid app version and build timestamp
+## Check your IBCOVID app version and build timestamp
 
-1. Open the SwissCovid app
+1. Open the IBCOVID app
 2. Click on the `i` button in the top-right corner
 3. Check the app version in the top right corner, which is the text between 'Version' and the comma (e.g., 1.0.1-pilot), and record its value to be used later
 4. Check the build timestamp in the bottom right corner, which is the number before the slash (e.g., 1591722151141), and record its value to be used later
@@ -18,7 +18,7 @@ Download and install [Docker](https://www.docker.com/).
 
 1. Make sure you have `git` installed
 2. Clone the Github repository
-3. Checkout the Tag that corresponds to the version of your SwissCovid app (e.g., 1.0.1-pilot)
+3. Checkout the Tag that corresponds to the version of your IBCOVID app (e.g., 1.0.1-pilot)
 
 ```shell
 git clone https://github.com/DP-3T/dp3t-app-android-ch.git ~/dp3t-app-android-ch

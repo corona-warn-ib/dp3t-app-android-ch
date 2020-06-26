@@ -2,10 +2,10 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">"SwissCovid"</string>
+    <string name="app_name">"IBCOVID"</string>
 
     <!-- App Name (unter Icon auf iOS) -->
-    <string name="CFBundleDisplayName">"SwissCovid"</string>
+    <string name="CFBundleDisplayName">"IBCOVID"</string>
 
     <!-- Loading View: Erneut laden -->
     <string name="loading_view_reload">"Reload"</string>
@@ -293,7 +293,7 @@ Thank you for helping to break the chain of infection."</string>
     <string name="meldungen_detail_call">"Call us"</string>
 
     <!-- Meldungen Detail Text Weisse Box -->
-    <string name="meldungen_detail_call_text">"SwissCovid infoline"</string>
+    <string name="meldungen_detail_call_text">"IBCOVID infoline"</string>
 
     <!-- Meldungen Detail Weisse Box Button -->
     <string name="meldungen_detail_call_button">"Call now"</string>
@@ -309,7 +309,7 @@ Thank you for helping to break the chain of infection."</string>
 
     <!-- Meldungen Detail: Weisse Box Text -->
     <string name="meldungen_detail_guard_text">"If you have any questions:
-Infoline SwissCovid
+Infoline IBCOVID
 +41 58 387 77 78"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
@@ -328,7 +328,7 @@ Infoline SwissCovid
     <string name="onboarding_prinzip_title">"Staying one step ahead of the virus"</string>
 
     <!-- Onboarding Prinzip Text -->
-    <string name="onboarding_prinzip_text1">"By using the SwissCovid app, we can all help to contain the spread of the new coronavirus."</string>
+    <string name="onboarding_prinzip_text1">"By using the IBCOVID app, we can all help to contain the spread of the new coronavirus."</string>
 
     <!-- Onboarding Prinzip Text -->
     <string name="onboarding_prinzip_text2">"The app tells you if you might have been exposed to the coronavirus."</string>
@@ -598,7 +598,7 @@ If it is possible that you have been infected, you will receive a message on you
 You will only be notified if there is sufficient likelihood that you have been infected."</string>
 
     <!-- Meldungen Detail Weisse Box Texte Unten -->
-    <string name="meldungen_detail_explanation_text3">"The infoline SwissCovid will advise you on getting a free test."</string>
+    <string name="meldungen_detail_explanation_text3">"The infoline IBCOVID will advise you on getting a free test."</string>
 
     <!-- Meldungen: Meldungen FAQ -->
     <string name="meldungen_meldungen_faq1_title">"Do I have to call?"</string>
@@ -635,7 +635,7 @@ The counselling is free of charge. You just have to pay for the call."</string>
     <!-- Inform Detail FAQ Text -->
     <string name="inform_detail_faq2_text">"Only the random IDs from your app are sent, no personal data. 
 
-Other SwissCovid apps can then check if it is possible that they have been infected."</string>
+Other IBCOVID apps can then check if it is possible that they have been infected."</string>
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
@@ -668,7 +668,7 @@ Other SwissCovid apps can then check if it is possible that they have been infec
     <string name="language_key">"en"</string>
 
     <!-- Meldungen Homescreen: Name Hotline -->
-    <string name="exposed_info_contact_hotline_name">"SwissCovid infoline"</string>
+    <string name="exposed_info_contact_hotline_name">"IBCOVID infoline"</string>
 
     <!-- Meldung Detail: "Noch 1 Tag" Label -->
     <string name="date_in_one_day">"1 more day"</string>
@@ -761,7 +761,7 @@ Other SwissCovid apps can then check if it is possible that they have been infec
     <string name="tracing_permission_error_text_ios">"Activate COVID-19 Exposure Notifications for proximity tracing to work."</string>
 
     <!-- Error-Meldung, wenn der Benutzer während des Informieren-Flows bei GApple das Key-Sharing nicht erlaubt. -->
-    <string name="user_cancelled_key_sharing_error">"The message could not be sent. Please allow your random IDs to be shared with the SwissCovid app."</string>
+    <string name="user_cancelled_key_sharing_error">"The message could not be sent. Please allow your random IDs to be shared with the IBCOVID app."</string>
 
     <!-- Button um die Google Play Services zu aktualisieren -->
     <string name="playservices_update">"Update"</string>
@@ -852,10 +852,10 @@ If no update is currently available on your device, please try again later."</st
 
     <!-- Code-Label Titel im Dialog mit dem Code, der vor dem Anrufen angezeigt wird, wenn ein Kontakt positiv ist. -->
     <string name="pre_call_dialog_box_number">"Number"</string>
-    <string name="tracing_active_tracking_always_info">"SwissCovid remains active even if the app has been closed."</string>
+    <string name="tracing_active_tracking_always_info">"IBCOVID remains active even if the app has been closed."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"SwissCovid 
+    <string name="oboarding_splashscreen_title">"IBCOVID
 breaks 
 chains of infection."</string>
     <string name="inform_detail_faq3_text">"Although no personal data relating to you is sent out, it may well be that someone remembers their encounter with you from the date."</string>
@@ -871,7 +871,7 @@ chains of infection."</string>
     <string name="onboarding_gaen_text_android">"COVID-19 Exposure Notifications must be activated to use the app."</string>
 
     <!-- Onboarding Disclaimer Screen: AppName Title -->
-    <string name="onboarding_disclaimer_heading">"SwissCovid"</string>
+    <string name="onboarding_disclaimer_heading">"IBCOVID"</string>
 
     <!-- Onboarding Disclaimer Screen: Title -->
     <string name="onboarding_disclaimer_title">"Tips on use"</string>
@@ -891,7 +891,7 @@ Schwarzenburgstrasse 157
 3097 Liebefeld, Switzerland"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
-    <string name="onboarding_disclaimer_app_version">"SwissCovid App Version"</string>
+    <string name="onboarding_disclaimer_app_version">"IBCOVID App Version"</string>
 
     <!-- Onboarding Disclaimer Screen: Release version title -->
     <string name="onboarding_disclaimer_release_version">"Release Date:"</string>

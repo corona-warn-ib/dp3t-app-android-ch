@@ -2,10 +2,10 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">"SwissCovid"</string>
+    <string name="app_name">"IBCOVID"</string>
 
     <!-- App Name (unter Icon auf iOS) -->
-    <string name="CFBundleDisplayName">"SwissCovid"</string>
+    <string name="CFBundleDisplayName">"IBCOVID"</string>
 
     <!-- Loading View: Erneut laden -->
     <string name="loading_view_reload">"Chargiar danovamain"</string>
@@ -309,7 +309,7 @@ Uschia gidais Vus da franar las chadainas d'infecziun."</string>
 
     <!-- Meldungen Detail: Weisse Box Text -->
     <string name="meldungen_detail_guard_text">"En cas da dumondas:
-Infoline SwissCovid
+Infoline IBCOVID
 +41 58 387 77 78"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
@@ -328,7 +328,7 @@ Infoline SwissCovid
     <string name="onboarding_prinzip_title">"In pass ordavant al virus"</string>
 
     <!-- Onboarding Prinzip Text -->
-    <string name="onboarding_prinzip_text1">"Cun l'app SwissCovid pon tuts gidar da franar la derasaziun dal nov coronavirus"</string>
+    <string name="onboarding_prinzip_text1">"Cun l'app IBCOVID pon tuts gidar da franar la derasaziun dal nov coronavirus"</string>
 
     <!-- Onboarding Prinzip Text -->
     <string name="onboarding_prinzip_text2">"L'app As infurmescha, sche Vus essas potenzialmain stà exponì/stada exponida al nov coronavirus."</string>
@@ -596,7 +596,7 @@ En cas d'in'eventuala infecziun vegnis Vus orientà/orientada cun ina communicaz
 Vus vegnis infurmà/infurmada mo sche la pussaivladad d'esser infectà/infectada è gronda avunda."</string>
 
     <!-- Meldungen Detail Weisse Box Texte Unten -->
-    <string name="meldungen_detail_explanation_text3">"L'infoline SwissCovid As cusseglia davart la pussaivladad d'in test gratuit."</string>
+    <string name="meldungen_detail_explanation_text3">"L'infoline IBCOVID As cusseglia davart la pussaivladad d'in test gratuit."</string>
 
     <!-- Meldungen: Meldungen FAQ -->
     <string name="meldungen_meldungen_faq1_title">"Stoss jau telefonar?"</string>
@@ -634,7 +634,7 @@ Uschia vegni garantì che be cas confermads vegnan avisads via l'app."</string>
     <!-- Inform Detail FAQ Text -->
     <string name="inform_detail_faq2_text">"I vegnan mo tramess ils IDs casuals da Voss'app, naginas datas persunalas.
 
-Uschia san auters utilisaders da l'app SwissCovid ch'i dat la pussaivladad d'ina infecziun."</string>
+Uschia san auters utilisaders da l'app IBCOVID ch'i dat la pussaivladad d'ina infecziun."</string>
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
@@ -669,7 +669,7 @@ Respundai las dumondas en il check online da l'UFSP per ina recumandaziun da cum
     <string name="language_key">"rm"</string>
 
     <!-- Meldungen Homescreen: Name Hotline -->
-    <string name="exposed_info_contact_hotline_name">"Infoline SwissCovid"</string>
+    <string name="exposed_info_contact_hotline_name">"Infoline IBCOVID"</string>
 
     <!-- Meldung Detail: "Noch 1 Tag" Label -->
     <string name="date_in_one_day">"Anc 1 di"</string>
@@ -762,7 +762,7 @@ Respundai las dumondas en il check online da l'UFSP per ina recumandaziun da cum
     <string name="tracing_permission_error_text_ios">"Activai communicaziuns COVID-19 per ch'il tracing anonim funcziunia."</string>
 
     <!-- Error-Meldung, wenn der Benutzer während des Informieren-Flows bei GApple das Key-Sharing nicht erlaubt. -->
-    <string name="user_cancelled_key_sharing_error">"La communicaziun n'ha betg pudì vegnir tramessa. Per plaschair permettai la cundivisiun da Voss IDs casuals cun l'app SwissCovid."</string>
+    <string name="user_cancelled_key_sharing_error">"La communicaziun n'ha betg pudì vegnir tramessa. Per plaschair permettai la cundivisiun da Voss IDs casuals cun l'app IBCOVID."</string>
 
     <!-- Button um die Google Play Services zu aktualisieren -->
     <string name="playservices_update">"Actualisar"</string>
@@ -853,10 +853,10 @@ Sche Vus n'avais da preschent a disposiziun nagin'actualisaziun sin Voss apparat
 
     <!-- Code-Label Titel im Dialog mit dem Code, der vor dem Anrufen angezeigt wird, wenn ein Kontakt positiv ist. -->
     <string name="pre_call_dialog_box_number">"Numer"</string>
-    <string name="tracing_active_tracking_always_info">"SwissCovid resta activ, era sche l'app vegn serrada."</string>
+    <string name="tracing_active_tracking_always_info">"IBCOVID resta activ, era sche l'app vegn serrada."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"SwissCovid 
+    <string name="oboarding_splashscreen_title">"IBCOVID
 fraina 
 chadainas d'infecziun."</string>
     <string name="inform_detail_faq3_text">"Cumbain ch'i na vegnan tramessas naginas datas davart Vossa persuna èsi pussaivel ch'insatgi sa regorda da la scuntrada a maun da la data."</string>
@@ -872,7 +872,7 @@ chadainas d'infecziun."</string>
     <string name="onboarding_gaen_text_android">"Per pudair utilisar l'app, ston vegnir activadas communicaziuns COVID-19"</string>
 
     <!-- Onboarding Disclaimer Screen: AppName Title -->
-    <string name="onboarding_disclaimer_heading">"SwissCovid"</string>
+    <string name="onboarding_disclaimer_heading">"IBCOVID"</string>
 
     <!-- Onboarding Disclaimer Screen: Title -->
     <string name="onboarding_disclaimer_title">"Infurmaziuns davart il diever"</string>
@@ -892,7 +892,7 @@ Schwarzenburgstrasse 157
 3097 Liebefeld, Schweiz"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
-    <string name="onboarding_disclaimer_app_version">"SwissCovid App Version"</string>
+    <string name="onboarding_disclaimer_app_version">"IBCOVID App Version"</string>
 
     <!-- Onboarding Disclaimer Screen: Release version title -->
     <string name="onboarding_disclaimer_release_version">"Release Date:"</string>

@@ -74,7 +74,7 @@
 								android:layout_alignParentEnd="true"
 								android:layout_marginTop="3dp" />
 
-							<TextView
+							<androidx.appcompat.widget.AppCompatTextView
 								android:id="@+id/contacts_tracing_title"
 								style="@style/NextStep.Text.Title"
 								android:layout_width="match_parent"
@@ -84,7 +84,7 @@
 								android:layout_toStartOf="@id/contacts_tracing_switch"
 								android:text="@string/tracing_setting_title" />
 
-							<TextView
+							<androidx.appcompat.widget.AppCompatTextView
 								style="@style/NextStep.Text"
 								android:layout_width="match_parent"
 								android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
 					android:layout_marginBottom="@dimen/spacing_very_large"
 					android:orientation="vertical">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
 							android:src="@drawable/ic_begegnungen"
 							android:tint="@color/blue_main" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							style="@style/NextStep.Text"
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
 
 					</LinearLayout>
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
 							android:src="@drawable/ic_lock"
 							android:tint="@color/blue_main" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							style="@style/NextStep.Text"
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
 
 					</LinearLayout>
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
 							android:src="@drawable/ic_bluetooth"
 							android:tint="@color/blue_main" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							style="@style/NextStep.Text"
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"

@@ -65,19 +65,19 @@
 					android:layout_marginBottom="@dimen/spacing_large"
 					android:orientation="vertical">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Title"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/debug_sdk_state_title" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/debug_sdk_state_text" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						android:id="@+id/debug_sdk_state_text"
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
@@ -119,13 +119,13 @@
 					android:layout_marginBottom="@dimen/spacing_large"
 					android:orientation="vertical">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Title"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/debug_state_setting_title" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
 					android:layout_marginBottom="@dimen/spacing_large"
 					android:orientation="vertical">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Title"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"

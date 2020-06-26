@@ -40,13 +40,13 @@
 				android:orientation="vertical"
 				android:paddingLeft="@dimen/spacing_small">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:text="@string/whattodo_subtitle_positivetest" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Bold"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"

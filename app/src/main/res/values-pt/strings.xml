@@ -2,10 +2,10 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">"SwissCovid"</string>
+    <string name="app_name">"IBCOVID"</string>
 
     <!-- App Name (unter Icon auf iOS) -->
-    <string name="CFBundleDisplayName">"SwissCovid"</string>
+    <string name="CFBundleDisplayName">"IBCOVID"</string>
 
     <!-- Loading View: Erneut laden -->
     <string name="loading_view_reload">"Recarregar"</string>
@@ -294,7 +294,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
     <string name="meldungen_detail_call">"Ligue-nos"</string>
 
     <!-- Meldungen Detail Text Weisse Box -->
-    <string name="meldungen_detail_call_text">"Linha informativa SwissCovid"</string>
+    <string name="meldungen_detail_call_text">"Linha informativa IBCOVID"</string>
 
     <!-- Meldungen Detail Weisse Box Button -->
     <string name="meldungen_detail_call_button">"Ligar agora"</string>
@@ -310,7 +310,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
 
     <!-- Meldungen Detail: Weisse Box Text -->
     <string name="meldungen_detail_guard_text">"Se tiver perguntas:
-linha informativa SwissCovid
+linha informativa IBCOVID
 +41 58 387 77 78"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
@@ -600,7 +600,7 @@ Em caso de possível contágio, receberá uma notificação no ecrã de bloqueio
 Só será notificado se houver uma probabilidade razoável de contágio."</string>
 
     <!-- Meldungen Detail Weisse Box Texte Unten -->
-    <string name="meldungen_detail_explanation_text3">"A linha informativa SwissCovid aconselha-o sobre um possível teste gratuito."</string>
+    <string name="meldungen_detail_explanation_text3">"A linha informativa IBCOVID aconselha-o sobre um possível teste gratuito."</string>
 
     <!-- Meldungen: Meldungen FAQ -->
     <string name="meldungen_meldungen_faq1_title">"Tenho de ligar?"</string>
@@ -638,7 +638,7 @@ Isto assegura que só os casos confirmados são assinalados na app."</string>
     <!-- Inform Detail FAQ Text -->
     <string name="inform_detail_faq2_text">"Só são enviados os IDs aleatórios da sua app e nunca dados pessoais.
 
-Desta forma, outros utilizadores da app SwissCovid ficam a saber que existe a possibilidade de um contágio."</string>
+Desta forma, outros utilizadores da app IBCOVID ficam a saber que existe a possibilidade de um contágio."</string>
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
@@ -673,7 +673,7 @@ Responda às perguntas da avaliação do risco de infeção com COVID-19 do Serv
     <string name="language_key">"pt"</string>
 
     <!-- Meldungen Homescreen: Name Hotline -->
-    <string name="exposed_info_contact_hotline_name">"linha informativa SwissCovid"</string>
+    <string name="exposed_info_contact_hotline_name">"linha informativa IBCOVID"</string>
 
     <!-- Meldung Detail: "Noch 1 Tag" Label -->
     <string name="date_in_one_day">"Mais 1 dia"</string>
@@ -766,7 +766,7 @@ Responda às perguntas da avaliação do risco de infeção com COVID-19 do Serv
     <string name="tracing_permission_error_text_ios">"Ative a função Notificações de exposição à COVID-19 para que o rastreamento funcione."</string>
 
     <!-- Error-Meldung, wenn der Benutzer während des Informieren-Flows bei GApple das Key-Sharing nicht erlaubt. -->
-    <string name="user_cancelled_key_sharing_error">"A mensagem não foi enviada. Por favor, autorize a partilha dos seus dados de IDs aleatórios com a app SwissCovid."</string>
+    <string name="user_cancelled_key_sharing_error">"A mensagem não foi enviada. Por favor, autorize a partilha dos seus dados de IDs aleatórios com a app IBCOVID."</string>
 
     <!-- Button um die Google Play Services zu aktualisieren -->
     <string name="playservices_update">"Atualizar"</string>
@@ -855,10 +855,10 @@ Se não houver de momento nenhuma atualização disponível no seu dispositivo, 
 
     <!-- Code-Label Titel im Dialog mit dem Code, der vor dem Anrufen angezeigt wird, wenn ein Kontakt positiv ist. -->
     <string name="pre_call_dialog_box_number">"Número"</string>
-    <string name="tracing_active_tracking_always_info">"A SwissCovid mantém-se ativa, mesmo quando a app é desligada."</string>
+    <string name="tracing_active_tracking_always_info">"A IBCOVID mantém-se ativa, mesmo quando a app é desligada."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"A SwissCovid 
+    <string name="oboarding_splashscreen_title">"A IBCOVID
 trava as 
 cadeias de transmissão."</string>
     <string name="inform_detail_faq3_text">"Embora não sejam enviados dados pessoais seus, é possível que alguém se recorde de um contacto consigo pela data."</string>
@@ -874,7 +874,7 @@ cadeias de transmissão."</string>
     <string name="onboarding_gaen_text_android">"Para poder usar a app, tem de ativar a função Notificações de exposição à COVID-19."</string>
 
     <!-- Onboarding Disclaimer Screen: AppName Title -->
-    <string name="onboarding_disclaimer_heading">"SwissCovid"</string>
+    <string name="onboarding_disclaimer_heading">"IBCOVID"</string>
 
     <!-- Onboarding Disclaimer Screen: Title -->
     <string name="onboarding_disclaimer_title">"Instruções de utilização"</string>
@@ -894,7 +894,7 @@ Schwarzenburgstrasse 157
 3097 Liebefeld, Schweiz"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
-    <string name="onboarding_disclaimer_app_version">"SwissCovid App Version"</string>
+    <string name="onboarding_disclaimer_app_version">"IBCOVID App Version"</string>
 
     <!-- Onboarding Disclaimer Screen: Release version title -->
     <string name="onboarding_disclaimer_release_version">"Release Date:"</string>

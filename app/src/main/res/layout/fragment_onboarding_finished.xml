@@ -37,7 +37,7 @@
 				android:scaleType="fitCenter"
 				android:src="@drawable/ill_outro" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				android:id="@+id/onboarding_title"
 				style="@style/NextStep.Text.Title"
 				android:layout_width="match_parent"
@@ -47,7 +47,7 @@
 				android:gravity="center_horizontal"
 				android:text="@string/onboarding_go_title" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"

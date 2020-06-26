@@ -28,7 +28,7 @@
 			android:layout_marginTop="5dp"
 			android:orientation="horizontal">
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text.Title"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"

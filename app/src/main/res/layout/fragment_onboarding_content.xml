@@ -28,7 +28,7 @@
 			android:paddingEnd="@dimen/spacing_large"
 			android:paddingBottom="@dimen/spacing_large">
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				android:id="@+id/onboarding_subtitle"
 				style="@style/NextStep.Text.Blue"
 				android:layout_width="match_parent"
@@ -45,7 +45,7 @@
 				android:scaleType="fitCenter"
 				tools:src="@drawable/ill_prinzip" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				android:id="@+id/onboarding_title"
 				style="@style/NextStep.Text.Title"
 				android:layout_width="match_parent"
@@ -69,7 +69,7 @@
 					android:tint="@color/blue_main"
 					tools:src="@drawable/ic_begegnungen" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:id="@+id/onboarding_description_1"
 					style="@style/NextStep.Text"
 					android:layout_width="match_parent"
@@ -94,7 +94,7 @@
 					android:tint="@color/blue_main"
 					tools:src="@drawable/ic_message_alert" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:id="@+id/onboarding_description_2"
 					style="@style/NextStep.Text"
 					android:layout_width="match_parent"

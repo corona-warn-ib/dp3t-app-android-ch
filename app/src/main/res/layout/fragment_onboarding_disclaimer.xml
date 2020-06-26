@@ -34,7 +34,7 @@
 				android:paddingEnd="@dimen/spacing_large"
 				android:paddingBottom="@dimen/spacing_large">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Blue"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
 					android:gravity="center_horizontal"
 					android:text="@string/onboarding_disclaimer_heading" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Title"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
 						android:src="@drawable/ic_info"
 						android:tint="@color/blue_main" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
 						android:src="@drawable/ic_launch"
 						android:tint="@color/blue_main" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold.Blue"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
 				android:paddingEnd="@dimen/spacing_large"
 				android:paddingBottom="@dimen/spacing_huge">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Bold"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
 					android:hyphenationFrequency="full"
 					android:text="@string/onboarding_disclaimer_warning_title" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Small"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
 					android:padding="@dimen/spacing_small"
 					android:src="@drawable/ic_manufacturer_iso_icon" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="@dimen/spacing_tiny_small"
@@ -165,7 +165,7 @@
 				android:paddingRight="@dimen/spacing_small"
 				android:paddingBottom="@dimen/spacing_tiny_small">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:id="@+id/onboarding_disclaimer_version_info"
 					android:layout_width="0dp"
 					android:layout_height="wrap_content"

@@ -34,14 +34,14 @@
 			android:gravity="center_horizontal"
 			android:orientation="vertical">
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:gravity="center_horizontal"
 				android:text="@string/inform_detail_subtitle" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text.Title"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -73,19 +73,19 @@
 					android:layout_marginBottom="@dimen/spacing_very_large"
 					android:orientation="vertical">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold.Purple"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/inform_detail_box_subtitle" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Title"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/inform_detail_box_title" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
 				android:layout_marginBottom="@dimen/spacing_very_large"
 				android:orientation="vertical">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Bold"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
 						android:src="@drawable/ic_verified_user"
 						android:tint="@color/purple_main" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
 
 				</LinearLayout>
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Bold"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -163,7 +163,7 @@
 						android:src="@drawable/ic_key"
 						android:tint="@color/purple_main" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
 
 				</LinearLayout>
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Bold"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -192,7 +192,7 @@
 						android:src="@drawable/ic_person"
 						android:tint="@color/purple_main" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"

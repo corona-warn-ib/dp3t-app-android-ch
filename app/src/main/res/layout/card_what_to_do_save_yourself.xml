@@ -29,7 +29,7 @@
 			android:paddingRight="@dimen/spacing_larger"
 			android:paddingBottom="@dimen/spacing_medium_large">
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				android:id="@+id/card_encounters_subtitle"
 				style="@style/NextStep.Text.SubTitle"
 				android:layout_width="match_parent"
@@ -38,7 +38,7 @@
 				android:text="@string/no_meldungen_box_subtitle"
 				app:layout_constraintTop_toTopOf="parent" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				android:id="@+id/card_encounters_title"
 				style="@style/NextStep.Text.Title"
 				android:layout_width="match_parent"
@@ -73,7 +73,7 @@
 				app:layout_constraintRight_toLeftOf="@id/card_encounters_image"
 				app:layout_constraintTop_toTopOf="@id/card_encounters_image">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					android:id="@+id/card_encounters_text"
 					style="@style/NextStep.Text"
 					android:layout_width="match_parent"
@@ -94,7 +94,7 @@
 						android:src="@drawable/ic_launch"
 						android:tint="@color/green_main" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold.Green"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
 		android:paddingTop="@dimen/spacing_very_large"
 		android:paddingBottom="@dimen/spacing_medium_large">
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Bold"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
 				android:src="@drawable/ic_message_alert"
 				android:tint="@color/blue_main" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
 
 		</LinearLayout>
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Bold"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
 				android:src="@drawable/ic_begegnungen"
 				android:tint="@color/blue_main" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"

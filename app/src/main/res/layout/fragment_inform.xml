@@ -35,7 +35,7 @@
 			android:layout_marginTop="@dimen/spacing_huge"
 			android:orientation="vertical">
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text.Title"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -55,13 +55,13 @@
 				android:visibility="gone"
 				tools:visibility="visible">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Bold.Red"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="@string/inform_code_invalid_title" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Red"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
 
 			</LinearLayout>
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				android:id="@+id/inform_input_text"
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"

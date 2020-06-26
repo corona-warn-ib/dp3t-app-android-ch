@@ -35,14 +35,14 @@
 			android:gravity="center_horizontal"
 			android:orientation="vertical">
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:gravity="center_horizontal"
 				android:text="@string/symptom_detail_subtitle" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text.Title"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -74,19 +74,19 @@
 					android:layout_marginBottom="@dimen/spacing_very_large"
 					android:orientation="vertical">
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Bold.Purple"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/symptom_detail_box_subtitle" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text.Title"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/symptom_detail_box_title" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
 							android:src="@drawable/ic_launch"
 							android:tint="@color/purple_main" />
 
-						<TextView
+						<androidx.appcompat.widget.AppCompatTextView
 							style="@style/NextStep.Text.Bold.Purple"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
 				android:layout_marginBottom="@dimen/spacing_very_large"
 				android:orientation="vertical">
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text.Bold"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
 						android:src="@drawable/ic_check_circle"
 						android:tint="@color/purple_main" />
 
-					<TextView
+					<androidx.appcompat.widget.AppCompatTextView
 						style="@style/NextStep.Text"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"

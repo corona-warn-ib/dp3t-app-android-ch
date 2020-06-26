@@ -34,13 +34,13 @@
 		android:paddingEnd="@dimen/spacing_large"
 		android:paddingBottom="@dimen/spacing_very_large">
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Title"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="@string/synchronizations_view_info_title" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Bold"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
 				android:src="@drawable/ic_refresh"
 				android:tint="@color/blue_main" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
 
 	</LinearLayout>
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		style="@style/NextStep.Text.Bold"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"

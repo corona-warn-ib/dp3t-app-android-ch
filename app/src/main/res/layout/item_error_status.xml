@@ -25,7 +25,7 @@
 		android:layout_height="@dimen/icon_size"
 		android:src="@drawable/ic_ic_bluetooth_disabled" />
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/error_status_title"
 		style="@style/NextStep.Text.Bold.Red.CAPS"
 		android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
 		android:paddingBottom="@dimen/spacing_small"
 		android:text="@string/bluetooth_permission_error_title" />
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/error_status_text"
 		style="@style/NextStep.Text"
 		android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
 		android:layout_marginBottom="@dimen/spacing_small"
 		android:text="@string/bluetooth_permission_error_text" />
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/error_status_button"
 		style="@style/NextStep.Text.Bold"
 		android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
 		android:text="@string/bluetooth_turn_on_button_title"
 		android:visibility="visible"/>
 
-	<TextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/error_status_code"
 		style="@style/NextStep.Text"
 		android:layout_width="wrap_content"

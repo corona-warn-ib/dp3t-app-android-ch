@@ -33,7 +33,7 @@
 			android:scaleType="fitCenter"
 			android:src="@drawable/ill_onboarding_gapple" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			android:id="@+id/onboarding_title"
 			style="@style/NextStep.Text.Title"
 			android:layout_width="match_parent"
@@ -45,7 +45,7 @@
 			android:paddingEnd="@dimen/spacing_huge"
 			android:text="@string/onboarding_gaen_title" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			android:id="@+id/onboarding_description"
 			style="@style/NextStep.Text"
 			android:layout_width="match_parent"
@@ -86,14 +86,14 @@
 			android:paddingEnd="@dimen/spacing_large"
 			android:paddingBottom="@dimen/spacing_huge">
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="@dimen/spacing_large"
 				android:text="@string/onboarding_good_to_know" />
 
-			<TextView
+			<androidx.appcompat.widget.AppCompatTextView
 				style="@style/NextStep.Text.Bold"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
 					android:src="@drawable/ic_lock"
 					android:tint="@color/blue_main" />
 
-				<TextView
+				<androidx.appcompat.widget.AppCompatTextView
 					style="@style/NextStep.Text"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"

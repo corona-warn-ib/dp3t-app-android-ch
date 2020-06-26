@@ -27,7 +27,7 @@
 			android:layout_gravity="center_horizontal"
 			android:src="@drawable/ic_check_circle_inverted" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text.Title"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
 			android:text="@string/meldungen_no_meldungen_title"
 			android:textColor="@color/green_main" />
 
-		<TextView
+		<androidx.appcompat.widget.AppCompatTextView
 			style="@style/NextStep.Text"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
